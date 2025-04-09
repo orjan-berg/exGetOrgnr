@@ -60,4 +60,3 @@ function Generate-exOrgnr {
 # Example usage
 # $results = Generate-exOrgnr -count 5
 # Write-Output $results
-Generate-exOrgnr -count 3

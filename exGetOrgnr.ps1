@@ -1,10 +1,10 @@
-function Generate-exOrgnr {
+function new-exOrgnr {
     param (
         [string]$endPoint = 'https://data.brreg.no/enhetsregisteret/api/enheter/',
         [int]$count = 1  # Number of organization numbers to generate
     )
 
-    function Generate-NorwegianOrgUnitCheckDigit {
+    function new-NorwegianOrgUnitCheckDigit {
         param (
             [string]$orgUnitNumber
         )
@@ -58,5 +58,5 @@ function Generate-exOrgnr {
 }
 
 # Example usage
-# $results = Generate-exOrgnr -count 5
+# $results = new-exOrgnr -count 5
 # Write-Output $results
